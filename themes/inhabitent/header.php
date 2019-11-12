@@ -32,4 +32,6 @@
 				</nav><!-- #site-navigation -->
 			</header><!-- #masthead -->
 
+			<?php the_post_thumbnail(); ?>
+
 			<div id="content" class="site-content">
