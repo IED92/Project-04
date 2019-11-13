@@ -27,9 +27,8 @@ a {
 /* Menus */
 
 .main-navigation {
-	clear: both;
+	position: absolute;
 	display: block;
-	float: left;
 	width: 100%;
 
 	ul {
@@ -40,7 +39,6 @@ a {
 
 		ul {
 			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-			float: left;
 			position: absolute;
 			top: $base__space-unit;
 			left: -999rem;
@@ -77,8 +75,8 @@ a {
 		}
 	}
 	li {
-		float: left;
 		position: relative;
+		padding: 1rem;
 
 		&:hover > a,
 		&.focus > a {
@@ -106,7 +104,8 @@ a {
 		display: none;
 	}
 	.main-navigation ul {
-		display: block;
+		display: flex;
+		justify-content: flex-end;
 	}
 }
 
@@ -120,12 +119,10 @@ a {
 	}
 
 	.nav-previous {
-		float: left;
 		width: 50%;
 	}
 
 	.nav-next {
-		float: right;
 		text-align: right;
 		width: 50%;
 	}

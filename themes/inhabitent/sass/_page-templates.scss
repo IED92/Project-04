@@ -3,3 +3,22 @@
 --------------------------------------------------------------*/
 
 /* Front page */
+
+/* Grid style */
+
+.display-posts-listing.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 50px;
+}
+
+.display-posts-listing.grid .title {
+  display: block;
+}
+
+.display-posts-listing.grid img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
