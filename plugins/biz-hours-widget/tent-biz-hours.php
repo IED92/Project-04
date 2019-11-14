@@ -104,7 +104,6 @@ class Tent_Biz_Hours extends WP_Widget
 		$weekday = empty($instance['weekday']) ? '' : apply_filters('widget_weekday', $instance['weekday']);
 		$saturday = empty($instance['saturday']) ? '' : apply_filters('widget_saturday', $instance['saturday']);
 		$sunday = empty($instance['sunday']) ? '' : apply_filters('widget_sunday', $instance['sunday']);
-		// TODO: other fields go here...
 
 		ob_start();
 
@@ -112,21 +111,6 @@ class Tent_Biz_Hours extends WP_Widget
 			$widget_string .= $before_title;
 			$widget_string .= $title;
 			$widget_string .= $after_title;
-		}
-		if ($weekday) {
-			$widget_string .= $before_weekday;
-			$widget_string .= $weekday;
-			$widget_string .= $after_weekday;
-		}
-		if ($saturday) {
-			$widget_string .= $before_saturday;
-			$widget_string .= $saturday;
-			$widget_string .= $after_saturday;
-		}
-		if ($sunday) {
-			$widget_string .= $before_sunday;
-			$widget_string .= $sunday;
-			$widget_string .= $after_sunday;
 		}
 
 		include(plugin_dir_path(__FILE__) . 'views/widget.php');
