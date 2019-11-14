@@ -10,14 +10,17 @@ a {
 	&:visited {
 		color: $color__link-visited;
 	}
+
 	&:hover,
 	&:focus,
 	&:active {
 		color: $color__link-hover;
 	}
+
 	&:focus {
 		outline: thin dotted;
 	}
+
 	&:hover,
 	&:active {
 		outline: 0;
@@ -27,6 +30,7 @@ a {
 /* Menus */
 
 .main-navigation {
+	z-index: 2;
 	position: absolute;
 	display: block;
 	width: 100%;
@@ -50,8 +54,9 @@ a {
 			}
 
 			li {
-				&:hover > ul,
-				&.focus > ul {
+
+				&:hover>ul,
+				&.focus>ul {
 					left: 100%;
 				}
 			}
@@ -60,37 +65,35 @@ a {
 				width: 200px;
 			}
 
-			:hover > a,
-			.focus > a {
-			}
+			:hover>a,
+			.focus>a {}
 
 			a:hover,
-			a.focus {
-			}
+			a.focus {}
 		}
 
-		li:hover > ul,
-		li.focus > ul {
+		li:hover>ul,
+		li.focus>ul {
 			left: auto;
 		}
 	}
+
 	li {
 		position: relative;
 		padding: 1rem;
 
-		&:hover > a,
-		&.focus > a {
-		}
+		&:hover>a,
+		&.focus>a {}
 	}
+
 	a {
 		display: block;
 		text-decoration: none;
 	}
 
-	.current_page_item > a,
-	.current-menu-item > a,
-	.current_page_ancestor > a {
-	}
+	.current_page_item>a,
+	.current-menu-item>a,
+	.current_page_ancestor>a {}
 }
 
 /* Small menu. */
@@ -103,6 +106,7 @@ a {
 	.menu-toggle {
 		display: none;
 	}
+
 	.main-navigation ul {
 		display: flex;
 		justify-content: flex-end;
@@ -126,4 +130,34 @@ a {
 		text-align: right;
 		width: 50%;
 	}
+}
+
+//  Site logo
+
+.header-logo {
+	max-height: 35px;
+	position: absolute;
+	margin-left: 5rem;
+	margin-top: 8px;
+	z-index: 2;
+
+	img {
+		width: 100%;
+		z-index: 2;
+	}
+}
+
+.front-hero {
+	position: relative;
+	&-img {
+		 filter: brightness(50%);
+	}
+}
+
+.full-logo {
+	position: absolute;
+	margin: 0 auto;
+	z-index: 999;
+	width: 100px;
+	height: 100px;
 }

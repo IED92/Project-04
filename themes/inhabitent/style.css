@@ -432,6 +432,7 @@ a {
 
 /* Menus */
 .main-navigation {
+  z-index: 2;
   position: absolute;
   display: block;
   width: 100%; }
@@ -497,6 +498,29 @@ a {
 .post-navigation .nav-next {
   text-align: right;
   width: 50%; }
+
+.header-logo {
+  max-height: 35px;
+  position: absolute;
+  margin-left: 5rem;
+  margin-top: 8px;
+  z-index: 2; }
+  .header-logo img {
+    width: 100%;
+    z-index: 2; }
+
+.front-hero {
+  position: relative; }
+  .front-hero-img {
+    -webkit-filter: brightness(50%);
+            filter: brightness(50%); }
+
+.full-logo {
+  position: absolute;
+  margin: 0 auto;
+  z-index: 999;
+  width: 100px;
+  height: 100px; }
 
 /*--------------------------------------------------------------
 # Accessibility
