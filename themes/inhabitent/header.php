@@ -40,10 +40,4 @@
 			</nav><!-- #site-navigation -->
 		</header><!-- #masthead -->
 
-		<div class="front-hero">
-			<div class="front-hero-img"><?php the_post_thumbnail(); ?></div>
-			<!-- get_template_directory_uri(); -->
-				<span class="full-logo"><img src="wp-content/themes/inhabitent/img/logos/inhabitent-logo-full.svg" alt="Inhabitent"></span>
-		</div>
-
 		<div id="content" class="site-content">

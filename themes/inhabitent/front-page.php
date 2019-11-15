@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The template for displaying all pages.
  *
@@ -7,17 +8,25 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+<div id="primary" class="content-area">
 
-			<?php while ( have_posts() ) : the_post(); ?>
+	<div class="front-hero">
+		<div class="front-hero-img"><?php the_post_thumbnail(); ?></div>
+		<!-- get_template_directory_uri(); -->
+		<span class="full-logo"><img src= "<?= get_template_directory_uri(); ?>/img/logos/inhabitent-logo-full.svg" alt="Inhabitent"></span>
+	</div>
 
-				<?php get_template_part( 'template-parts/content', 'page' ); ?>
+	<main id="main" class="site-main" role="main">
 
-			<?php endwhile; // End of the loop. ?>
+		<?php while (have_posts()) : the_post(); ?>
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
+			<?php get_template_part('template-parts/content', 'page'); ?>
+
+		<?php endwhile; // End of the loop. 
+		?>
+
+	</main><!-- #main -->
+</div><!-- #primary -->
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
