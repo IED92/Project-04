@@ -540,6 +540,60 @@ a {
     max-height: 36px;
     width: auto; }
 
+.site-footer {
+  color: #fff; }
+
+.site-info {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  padding: 2rem 2rem 0 2rem; }
+  .site-info img {
+    -webkit-transform: translate(0, -50px);
+            transform: translate(0, -50px); }
+
+.contact-info {
+  line-height: 2.5rem; }
+
+div#footer-sidebar1 {
+  -webkit-transform: translate(-150px);
+          transform: translate(-150px); }
+
+.contact-info h1,
+.widget-title {
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #d99054; }
+
+.email-info,
+.phone-info,
+.day-of-week {
+  font-family: "Merriweather"; }
+
+.socials-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 15px;
+  font-size: 25px; }
+
+.copywrite-notice {
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  font-weight: lighter;
+  padding-bottom: 1rem; }
+
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
