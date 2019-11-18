@@ -29,27 +29,34 @@ a {
 
 /* Menus */
 
+.menu-search {
+	display: flex;
+}
+
+
 .main-navigation {
-	z-index: 2;
+	display: flex;
+	z-index: 1;
 	position: absolute;
-	display: block;
-	width: 100%;
+	width: 100vw;
+	justify-content: space-between;
+	padding: 5px 6rem 0 6rem;
 
 	ul {
-		display: none;
+		flex-direction: row;
 		list-style: none;
 		margin: 0;
 		padding-left: 0;
+		display: flex;
+		align-self: flex-end;
 
 		ul {
 			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 			position: absolute;
 			top: $base__space-unit;
-			left: -999rem;
-			z-index: 99999;
 
 			ul {
-				left: -999rem;
+				left: 0;
 				top: 0;
 			}
 
@@ -87,7 +94,6 @@ a {
 	}
 
 	a {
-		display: block;
 		text-decoration: none;
 		text-transform: uppercase;
 		font-family: $font__main;
@@ -110,9 +116,15 @@ a {
 	}
 
 	.main-navigation ul {
-		display: flex;
-		justify-content: flex-end;
 	}
+}
+
+/* Search Bar */
+
+.search-toggle i {
+	font-size: 20px;
+	transform: translate(0,15px);
+	margin-left: 5px;
 }
 
 .comment-navigation,
@@ -137,14 +149,11 @@ a {
 //  Site logo
 
 .header-logo {
-	max-height: 35px;
-	position: absolute;
-	margin-left: 5rem;
-	margin-top: 8px;
-	z-index: 2;
+	flex-basis: 50%;
+	padding-top: 10px;
 
-	img {
-		width: 100%;
-		z-index: 2;
+	&-img {
+		max-height: 36px;
+		width: auto;
 	}
 }
