@@ -779,14 +779,33 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.about-hero {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover; }
+  .about-hero-img {
+    -webkit-filter: brightness(65%);
+            filter: brightness(65%);
+    -o-object-position: 0 -50%;
+       object-position: 0 -50%; }
+
+/*--------------------------------------------------------------
+# Page Templates
+--------------------------------------------------------------*/
+/* Front page */
 .front-hero {
   position: relative;
   height: 100vh;
   width: 100vw;
   overflow: hidden; }
-  .front-hero-img {
+  .front-hero img {
     -webkit-filter: brightness(65%);
-            filter: brightness(65%); }
+            filter: brightness(65%);
+    -o-object-position: 0 -300px;
+       object-position: 0 -300px; }
 
 .full-logo {
   position: absolute;
@@ -918,7 +937,9 @@ object {
   grid-gap: 20px 20px;
   width: 100%;
   background: #fff;
-  padding-right: 30px; }
+  padding-right: 30px;
+  word-wrap: break-word;
+  overflow-wrap: break-word; }
 
 .listing-item {
   border: 1px solid #e1e1e1;

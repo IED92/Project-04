@@ -30,7 +30,7 @@
 			<!-- .site-branding -->
 			<nav id="site-navigation" class="main-navigation" role="navigation">
 				<a class="header-logo" href="<?= get_site_url(); ?>">
-					<img class="header-logo-img" src="wp-content/themes/inhabitent/img/logos/inhabitent-logo-tent-white.svg" alt="Inhabitent">
+					<img class="header-logo-img" src="<?= get_template_directory_uri() ?>/img/logos/inhabitent-logo-tent-white.svg" alt="Inhabitent">
 				</a>
 				<div class="menu-search">
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html('Primary Menu'); ?></button>

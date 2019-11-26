@@ -10,8 +10,9 @@
   width: 100vw;
   overflow: hidden;
 
-  &-img {
+  & img {
     filter: brightness(65%);
+    object-position: 0 -300px;
   }
 }
 
@@ -182,6 +183,8 @@
   width: 100%;
   background: #fff;
   padding-right: 30px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .listing-item {
