@@ -256,7 +256,8 @@ textarea {
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
-  clear: both; }
+  clear: both;
+  font-family: "Novocento Sans"; }
 
 /* Copy */
 p {
@@ -703,6 +704,11 @@ div#footer-sidebar1 {
 .bypostauthor {
   display: block; }
 
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1120px; }
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
@@ -816,6 +822,62 @@ object {
   .product-type-wrapper p {
     font-family: "Merriweather", serif; }
 
+.adventures {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  padding: 0 60px; }
+  .adventures h2 {
+    text-transform: uppercase;
+    font-weight: 300;
+    text-align: center;
+    font-size: 40px; }
+  .adventures ul {
+    display: grid;
+    grid-template-columns: 50%, 50%;
+    grid-auto-rows: 20%;
+    grid-gap: 20px 20px;
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+    width: 100%; }
+  .adventures img {
+    -webkit-filter: brightness(65%);
+            filter: brightness(65%);
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: -180px -75px;
+       object-position: -180px -75px;
+    max-height: 620px;
+    max-width: none;
+    width: auto; }
+  .adventures li {
+    line-height: 1;
+    overflow: hidden;
+    position: relative;
+    -o-object-position: 100% 150%;
+       object-position: 100% 150%;
+    width: 100%; }
+  .adventures li:first-child {
+    grid-column: 1/span 2;
+    grid-row: 1/span 2; }
+  .adventures li:nth-child(2) {
+    grid-column: 3/span 2;
+    grid-row: 1/span 1; }
+    .adventures li:nth-child(2) img {
+      -o-object-position: -160px -210px;
+         object-position: -160px -210px; }
+  .adventures li:nth-child(3) img {
+    -o-object-position: -380px -300px;
+       object-position: -380px -300px; }
+  .adventures li:last-child img {
+    -o-object-position: -330px -300px;
+       object-position: -330px -300px; }
+  .adventures .story-info {
+    margin: 1.5rem;
+    position: absolute;
+    z-index: 2; }
+
 /* Grid style */
 .journal-wrapper {
   display: -webkit-box;
@@ -825,7 +887,7 @@ object {
       justify-content: space-around;
   width: 100%; }
 
-.journal-wrapper.listing-item {
+.listing-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

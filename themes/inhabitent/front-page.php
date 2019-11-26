@@ -45,7 +45,46 @@ get_header(); ?>
 
 		<?php endwhile; // End of the loop. 
 		?>
-
+		<section class="adventures container">
+			<h2>Latest Adventures</h2>
+			<ul>
+				<li>
+					<div class="story-wrapper">
+						<img src="<?= get_template_directory_uri() ?>/img/adventure-photos/canoe-girl.jpg" alt="A girl paddling a canoe">
+						<div class="story-info">
+							<h3 class="entry-title"><a href="https://tent.academy.red/adventure/getting-back-to-nature-in-a-canoe/">Getting Back to Nature in a Canoe</a></h3> <a class="white-btn">Read More</a>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="story-wrapper">
+						<img src="<?= get_template_directory_uri() ?>/img/adventure-photos/beach-bonfire.jpg" alt="Bonfire with friends">
+						<div class="story-info">
+							<h3 class="entry-title"><a href="https://tent.academy.red/adventure/a-night-with-friends-at-the-beach/">A Night with Friends at the Beach</a></h3> <a class="white-btn">Read More</a>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="story-wrapper">
+						<img src="<?= get_template_directory_uri() ?>/img/adventure-photos/mountain-hikers.jpg" alt="Hikers taking in the view on a mountain">
+						<div class="story-info">
+							<h3 class="entry-title"><a href="https://tent.academy.red/adventure/taking-in-the-view-at-big-mountain/">Taking in the View at Big Mountain</a></h3> <a class="white-btn">Read More</a>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="story-wrapper">
+						<img src="<?= get_template_directory_uri() ?>/img/adventure-photos/night-sky.jpg" alt="Person star-gazing at the night sky">
+						<div class="story-info">
+							<h3 class="entry-title"><a href="https://tent.academy.red/adventure/star-gazing-at-the-night-sky/">Star-Gazing at the Night Sky</a></h3> <a class="white-btn">Read More</a>
+						</div>
+					</div>
+				</li>
+			</ul>
+			<p class="see-more">
+				<a href="" class="btn">More Adventures</a>
+			</p>
+		</section>
 	</main><!-- #main -->
 </div><!-- #primary -->
 
