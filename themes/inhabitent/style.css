@@ -272,17 +272,6 @@ blockquote {
 address {
   margin: 0 0 1.5rem; }
 
-pre {
-  background: #eee;
-  font-family: "Courier 10 Pitch", Courier, monospace;
-  font-size: 15px;
-  font-size: 0.9375rem;
-  line-height: 1.6;
-  margin-bottom: 1.6rem;
-  max-width: 100%;
-  overflow: auto;
-  padding: 1.6rem; }
-
 code, kbd, tt, var {
   font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
   font-size: 15px;
@@ -724,7 +713,7 @@ div#footer-sidebar1 {
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1120px; }
+  max-width: 1120px; }
 
 /*--------------------------------------------------------------
 # Media
@@ -808,7 +797,9 @@ object {
   z-index: 999;
   max-height: 200px; }
 
-.shop-title {
+.shop-title,
+.journal-home-title {
+  margin: 0 auto;
   padding: 2rem 0 2rem 0;
   text-align: center;
   text-transform: uppercase;
@@ -820,17 +811,17 @@ object {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem; }
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
 
 .product-type-wrapper {
   border: 1px solid #a1a1a1;
   border-top: 5px solid #a1a1a1;
   text-align: center;
   width: 250px; }
+  .product-type-wrapper:hover {
+    border-color: #d99054; }
   .product-type-wrapper img {
     padding-top: 10px;
     margin-bottom: 15px;
@@ -841,9 +832,10 @@ object {
 
 .adventures {
   width: 100vw;
-  height: 100vh;
+  height: 110vh;
   overflow: hidden;
-  padding: 0 60px; }
+  padding: 0 20px;
+  margin-bottom: 60px; }
   .adventures h2 {
     text-transform: uppercase;
     font-weight: 300;
@@ -880,8 +872,8 @@ object {
     grid-column: 1/span 2;
     grid-row: 1/span 2; }
     .adventures li:first-child .story-info {
-      -webkit-transform: translate(10px, -300px);
-              transform: translate(10px, -300px); }
+      -webkit-transform: translate(10px, -650px);
+              transform: translate(10px, -650px); }
   .adventures li:nth-child(2) {
     grid-column: 3/span 2;
     grid-row: 1/span 1; }
@@ -889,20 +881,20 @@ object {
       -o-object-position: -160px -210px;
          object-position: -160px -210px; }
     .adventures li:nth-child(2) .story-info {
-      -webkit-transform: translate(10px, -500px);
-              transform: translate(10px, -500px); }
+      -webkit-transform: translate(10px, -550px);
+              transform: translate(10px, -550px); }
   .adventures li:nth-child(3) img {
     -o-object-position: -380px -300px;
        object-position: -380px -300px; }
   .adventures li:nth-child(3) .story-info {
-    -webkit-transform: translate(10px, -500px);
-            transform: translate(10px, -500px); }
+    -webkit-transform: translate(10px, -600px);
+            transform: translate(10px, -600px); }
   .adventures li:last-child img {
     -o-object-position: -330px -300px;
        object-position: -330px -300px; }
   .adventures li:last-child .story-info {
-    -webkit-transform: translate(10px, -500px);
-            transform: translate(10px, -500px); }
+    -webkit-transform: translate(10px, -600px);
+            transform: translate(10px, -600px); }
   .adventures .story-info {
     margin: 1.5rem;
     position: absolute; }
@@ -910,30 +902,45 @@ object {
     position: relative; }
   .adventures h3 {
     font-family: 'Merriweather';
-    font-weight: 400; }
+    font-weight: 400;
+    font-size: 30px; }
+  .adventures a {
+    text-decoration: none; }
+  .adventures .see-more {
+    -webkit-transform: translate(0px -740px);
+            transform: translate(0px -740px);
+    width: 200px; }
 
-/* Grid style */
+/* Journal Homepage style */
 .journal-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  width: 100%; }
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-gap: 20px 20px;
+  width: 100%;
+  background: #fff;
+  padding-right: 30px; }
 
 .listing-item {
+  border: 1px solid #e1e1e1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
-          flex-direction: column; }
-
-.dlisting.grid .title {
-  display: block; }
-
-.display-posts-listing.grid img {
-  display: block;
-  max-width: 100%;
-  height: auto; }
+          flex-direction: column;
+  overflow-wrap: break-word; }
+  .listing-item img {
+    max-height: 240px;
+    -o-object-fit: cover;
+       object-fit: cover; }
+  .listing-item .title {
+    font-family: "Novocento Sans";
+    color: #248A83;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 20px;
+    max-width: 360px; }
+  .listing-item .title a {
+    max-width: 360px; }

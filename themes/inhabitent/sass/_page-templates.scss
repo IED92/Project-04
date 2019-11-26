@@ -24,7 +24,9 @@
   max-height: 200px;
 }
 
-.shop-title {
+.shop-title,
+.journal-home-title {
+  margin: 0 auto;
   padding: 2rem 0 2rem 0;
   text-align: center;
   text-transform: uppercase;
@@ -35,9 +37,7 @@
 .product-type-blocks {
   width: 100%;
   display: flex;
-  justify-content: space-evenly;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  justify-content: space-between;
 }
 
 .product-type-wrapper {
@@ -45,6 +45,10 @@
   border-top: 5px solid $color__border-abbr;
   text-align: center;
   width: 250px;
+
+  &:hover {
+    border-color: $color__brand-orange;
+  }
 
   img {
     padding-top: 10px;
@@ -60,9 +64,10 @@
 
 .adventures {
   width: 100vw;
-  height: 100vh;
+  height: 110vh;
   overflow: hidden;
-  padding: 0 60px;
+  padding: 0 20px;
+  margin-bottom: 60px;
 
   & h2 {
     text-transform: uppercase;
@@ -70,6 +75,7 @@
     text-align: center;
     font-size: 40px;
   }
+
   & ul {
     display: grid;
     grid-template-columns: 50%, 50%;
@@ -102,8 +108,9 @@
   & li:first-child {
     grid-column: 1/span 2;
     grid-row: 1/span 2;
+
     & .story-info {
-      transform: translate(10px, -300px);
+      transform: translate(10px, -650px);
     }
   }
 
@@ -114,8 +121,9 @@
     & img {
       object-position: -160px -210px;
     }
+
     & .story-info {
-      transform: translate(10px, -500px);
+      transform: translate(10px, -550px);
     }
   }
 
@@ -123,8 +131,9 @@
     & img {
       object-position: -380px -300px;
     }
+
     & .story-info {
-      transform: translate(10px, -500px);
+      transform: translate(10px, -600px);
     }
   }
 
@@ -134,7 +143,7 @@
     }
 
     & .story-info {
-      transform: translate(10px, -500px);
+      transform: translate(10px, -600px);
     }
   }
 
@@ -142,35 +151,61 @@
     margin: 1.5rem;
     position: absolute;
   }
+
   & .story-wrapper {
     position: relative;
   }
+
   & h3 {
     font-family: 'Merriweather';
     font-weight: 400;
+    font-size: 30px;
+  }
+
+  & a {
+    text-decoration: none;
+  }
+
+  & .see-more {
+    transform: translate(0px -740px);
+    width: 200px;
   }
 }
 
 
-/* Grid style */
+/* Journal Homepage style */
 
 .journal-wrapper {
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-gap: 20px 20px;
   width: 100%;
+  background: #fff;
+  padding-right: 30px;
 }
 
 .listing-item {
+  border: 1px solid #e1e1e1;
   display: flex;
   flex-direction: column;
-}
+  overflow-wrap: break-word;
 
-.dlisting.grid .title {
-  display: block;
-}
+  & img {
+    max-height: 240px;
+    object-fit: cover;
+  }
 
-.display-posts-listing.grid img {
-  display: block;
-  max-width: 100%;
-  height: auto;
+  & .title {
+    font-family: $font__main;
+    color: $color__brand-green;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 20px;
+    max-width: 360px;
+  }
+
+  & .title a {
+    max-width: 360px;
+  }
 }

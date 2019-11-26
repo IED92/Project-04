@@ -30,7 +30,7 @@ get_header(); ?>
 					<div class="product-type-wrapper">
 						<img src="<?php echo get_template_directory_uri() . '/img/product-type-icons/' . $term->slug; ?>.svg" alt="<?php echo $term->name; ?>" />
 						<p><?php echo $term->description; ?></p>
-						<p><a href="<?php echo get_term_link($term); ?>" class="product-type-btn"><?php echo $term->name; ?> Stuff</a></p>
+						<p><a href="<?php echo get_term_link($term); ?>" class="product-type-btn btn"><?php echo $term->name; ?> Stuff</a></p>
 					</div>
 				<?php endforeach; ?>
 			</div>
@@ -38,13 +38,15 @@ get_header(); ?>
 	</section>
 
 	<main id="main" class="site-main" role="main">
-
+	<section class="recent-posts container">
+		<h1 class="journal-home-title">Inhabitent Journal</h1>
 		<?php while (have_posts()) : the_post(); ?>
 
 			<?php get_template_part('template-parts/content', 'page'); ?>
 
 		<?php endwhile; // End of the loop. 
 		?>
+	</section>
 		<section class="adventures container">
 			<h2>Latest Adventures</h2>
 			<ul>
