@@ -6,21 +6,21 @@
  * @package RED_Starter_Theme
  */
 
-					$header_class = '';
-					if (is_front_page()) {
-						$header_class = 'front-page';
-						$displayblue = 'none';
-						$displaywhite = "block";
-					} elseif (is_page('about')) {
-						$header_class = 'about-page';
-						$displayblue = "none";
-						$displaywhite = "block";
-					}
-					//  }
-					else {
-						$displayblue = "block";
-						$displaywhite = "none";
-					}
+$header_class = '';
+if (is_front_page()) {
+	$header_class = 'front-page';
+	$displayblue = 'none';
+	$displaywhite = "block";
+} elseif (is_page('about')) {
+	$header_class = 'about-page';
+	$displayblue = "none";
+	$displaywhite = "block";
+}
+//  }
+else {
+	$displayblue = "block";
+	$displaywhite = "none";
+}
 
 ?>
 <!DOCTYPE html>
@@ -46,7 +46,8 @@
 			<!-- .site-branding -->
 			<nav id="site-navigation" class="main-navigation" role="navigation">
 				<a class="header-logo" href="<?= get_site_url(); ?>">
-					<img class="header-logo-img" src="<?= get_template_directory_uri() ?>/img/logos/inhabitent-logo-tent-white.svg" alt="Inhabitent">
+					<img class="header-logo-img" src="<?= get_template_directory_uri() ?>/img/logos/inhabitent-logo-tent-white.svg" style="display: <?php echo $displaywhite ?>;" alt="Inhabitent">
+					<img class="header-logo-img" src="<?= get_template_directory_uri() ?>/img/logos/inhabitent-logo-tent.svg" style="display: <?php echo $displayblue ?>;" alt="Inhabitent">
 				</a>
 				<div class="menu-search">
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html('Primary Menu'); ?></button>
