@@ -1006,7 +1006,7 @@ object {
       bottom: 0;
       color: #fff;
       display: inline-block;
-      font-family: Novecento Sans Web, sans-serif;
+      font-family: "Novocento Sans";
       padding: .4rem;
       position: absolute;
       right: 0;
@@ -1022,6 +1022,8 @@ object {
     margin-top: 2.25rem;
     max-width: 75%;
     top: 0; }
+    .journal-content .entry-title a {
+      font-family: "Novocento Sans"; }
   .journal-content .side-bar {
     margin-left: 200px; }
 

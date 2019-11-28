@@ -1,29 +1,33 @@
 .journal-content {
   display: flex;
+
   & .content-area {
     max-width: 800px;
   }
+
   & .entry-content {
     & p {
       width: 650px;
     }
   }
+
   & .entry-header {
     position: relative;
     object-fit: cover;
+
     & .entry-meta {
       background-color: $color__brand-green;
       bottom: 0;
       color: #fff;
       display: inline-block;
-      font-family: Novecento Sans Web,
-      sans-serif;
+      font-family: $font__main;
       padding: .4rem;
       position: absolute;
       right: 0;
       text-transform: uppercase;
     }
   }
+
   & .entry-title {
     background-color: $color__brand-green;
     color: #fff;
@@ -35,7 +39,12 @@
     margin-top: 2.25rem;
     max-width: 75%;
     top: 0;
+
+    a {
+      font-family: $font__main;
+    }
   }
+
   .side-bar {
     margin-left: 200px;
   }
