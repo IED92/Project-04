@@ -18,12 +18,14 @@ textarea {
 h1, h2, h3, h4, h5, h6 {
 	clear: both;
 	font-family: $font__main;
+	text-transform: uppercase;
 }
 
 /* Copy */
 
 p {
 	margin-bottom: $base__space-unit;
+	font-family: $font__accent;
 }
 
 dfn, cite, em, i {
@@ -56,4 +58,9 @@ mark, ins {
 
 big {
 	font-size: 125%;
+}
+
+a {
+	text-decoration: none;
+	font-family: $font__accent;
 }

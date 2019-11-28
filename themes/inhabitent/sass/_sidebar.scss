@@ -1,0 +1,15 @@
+.side-bar {
+  width: 500px;
+  padding: 40px 30px;
+  border-left: 0px;
+  & div {
+    margin: 20px 0;
+    border: 0px;
+  }
+  & a {
+    color: $color__brand-green;
+  }
+  & a:hover {
+    color: $color__brand-purple;
+  }
+}
