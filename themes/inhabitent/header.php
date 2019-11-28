@@ -6,6 +6,22 @@
  * @package RED_Starter_Theme
  */
 
+					$header_class = '';
+					if (is_front_page()) {
+						$header_class = 'front-page';
+						$displayblue = 'none';
+						$displaywhite = "block";
+					} elseif (is_page('about')) {
+						$header_class = 'about-page';
+						$displayblue = "none";
+						$displaywhite = "block";
+					}
+					//  }
+					else {
+						$displayblue = "block";
+						$displaywhite = "none";
+					}
+
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
@@ -20,7 +36,7 @@
 </head>
 
 <body <?php body_class(); ?>>
-	<div id="page" class="hfeed site">
+	<div id="page" class="hfeed site <?= $header_class; ?>">
 		<a class="skip-link screen-reader-text" href="#content"><?php echo esc_html('Skip to content'); ?></a>
 
 		<header id="masthead" class="site-header" role="banner">

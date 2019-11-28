@@ -14,11 +14,10 @@
         <a href="<?php echo get_post_permalink() ?>"><?php the_post_thumbnail('large'); ?></a>
       </div>
     <?php endif; ?>
-    <!-- <div class="entry-header__container"> -->
     <div class="product-info">
-      <h2 class="product-title"><?php the_title(); ?></h2>
-      <span class="product-price"><?php get_field('product_price'); ?></span>
-      <span class="product-info-separator">...........................................................................................</span>
+      <h2 class="p-title"><?php the_title(); ?></h2>
+      <span class="p-price"><?php the_field('product_price'); ?></span>
+      <span class="separator">......................................................................</span>
     </div>
-  </header><!-- .entry-header -->
-</article><!-- #post-## -->
+  </header>
+</article>

@@ -1,26 +1,25 @@
 <?php
 
 /**
- * The template for displaying archive of products.
+ * Template for displaying products.
  *
- * @package Inhabitent_Starter_Theme
+ * @package RED_Starter_Theme
  */
 get_header(); ?>
 
-<div id="primary" class="content-area">
+<div id="primary" class="content-area container">
 	<main id="main" class="site-main" role="main">
 
 		<?php if (have_posts()) : ?>
 
 			<header class="page-header">
-				<?php the_archive_title('<h1 class="page-title">', '</h1>') //the_archive_title( '<h1 class="page-title">', '</h1>' ); 
-					?>
+				<h1 class="page-title">Shop Stuff</h1>
 				<?php
-					$args = array('post_type' => 'product-type');
+					$args = array('post_type' => 'product_type');
 					$terms = get_terms($args);
 					?>
 
-				<div class="product-stuff-links">
+				<div class="product-links">
 					<?php foreach ($terms as $term) :; ?>
 						<a href="<?php echo get_site_url(); ?>/<?php echo $term->taxonomy; ?>/<?php echo $term->slug; ?>"><?php echo $term->name; ?></a>
 					<?php endforeach; ?>

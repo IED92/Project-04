@@ -1,31 +1,36 @@
-body.archive {
 
+body.archive-product {
+  header.page-header {
+    text-align: center;
+  }
   .page-header {
-    margin-top: $base__space-unit * 1.5;
+    margin-top: $base__space-unit * 2;
+    text-align: center;
 
-    .product-stuff-links {
+    .product-links {
       display: flex;
       justify-content: center;
       margin-bottom: $base__space-unit * 2;
-      border-bottom: 1px dashed #d1d1d1;
+      border-bottom: 1px dashed $color__brand-lgrey;
       padding-bottom: 2.5rem;
 
       a {
-        @extend .link-reset;
         text-transform: uppercase;
-        font-family: 'Novecento';
+        font-family: $font__main;
         font-size: 1.2rem;
         margin: 0 1.5rem;
+        color: $color__brand-green;
       }
     }
   }
 
-  h1 {
+  h2 {
     text-transform: uppercase;
-    font-family: 'Novecento';
     text-align: center;
+    font-family: $font__main;
     letter-spacing: 2px;
     font-size: 2.4rem;
+    color: $color__brand-green;
   }
 
 }
@@ -37,7 +42,7 @@ body.archive {
 }
 
 .product-archive-grid {
-  @extend .container-flex;
+  display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
   margin-bottom: $base__space-unit;
@@ -76,24 +81,25 @@ body.archive {
       padding: $base__space-unit / 2 1rem;
       overflow: hidden;
 
-      h2.product-title {
+      h2.p-title {
         font-size: 1rem;
         margin: 0;
         font-weight: 400;
       }
 
-      span.product-info-separator {
+      span.separator {
         overflow: hidden;
         position: absolute;
         width: 75%;
         z-index: -1;
       }
 
-      span.product-price,
-      h2.product-title {
+      span.p-price,
+      h2.p-title {
         background-color: #fff;
         text-transform: none;
         text-decoration: none;
+        font-family: $font__accent;
       }
     }
   }
