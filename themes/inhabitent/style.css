@@ -899,20 +899,20 @@ object {
       -o-object-position: -160px -210px;
          object-position: -160px -210px; }
     .adventures li:nth-child(2) .story-info {
-      -webkit-transform: translate(10px, -550px);
-              transform: translate(10px, -550px); }
+      -webkit-transform: translate(10px, -560px);
+              transform: translate(10px, -560px); }
   .adventures li:nth-child(3) img {
     -o-object-position: -380px -300px;
        object-position: -380px -300px; }
   .adventures li:nth-child(3) .story-info {
-    -webkit-transform: translate(10px, -600px);
-            transform: translate(10px, -600px); }
+    -webkit-transform: translate(10px, -620px);
+            transform: translate(10px, -620px); }
   .adventures li:last-child img {
     -o-object-position: -330px -300px;
        object-position: -330px -300px; }
   .adventures li:last-child .story-info {
-    -webkit-transform: translate(10px, -600px);
-            transform: translate(10px, -600px); }
+    -webkit-transform: translate(10px, -620px);
+            transform: translate(10px, -620px); }
   .adventures .story-info {
     margin: 1.5rem;
     position: absolute; }
