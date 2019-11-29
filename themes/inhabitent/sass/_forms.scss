@@ -24,8 +24,7 @@ input[type="submit"] {
 	&:hover,
 	&:active,
 	&:focus {
-		background: darken($color__brand-green, 10%);
-		color: white;
+	
 	}
 }
 .black-btn {
@@ -62,13 +61,7 @@ input[type="url"],
 input[type="password"],
 input[type="search"],
 textarea {
-	color: #666;
-	border: 1px solid #ccc;
-	border-radius: 3px;
 
-	&:focus {
-		color: #111;
-	}
 }
 
 input[type="text"],
@@ -82,4 +75,7 @@ input[type="search"] {
 textarea {
 	padding-left: 3px;
 	width: 100%;
+}
+fieldset {
+	border: none;
 }

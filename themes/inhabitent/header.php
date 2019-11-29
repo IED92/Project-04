@@ -52,12 +52,16 @@ else {
 				<div class="menu-search">
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html('Primary Menu'); ?></button>
 					<?php wp_nav_menu(array('theme_location' => 'primary', 'menu_id' => 'primary-menu')); ?>
-					<a href="#" class="search-toggle" aria-hidden="true">
+					<a href="#" id="search-toggle" class="search-toggle" aria-hidden="true">
 						<i class="fas fa-search"></i>
 					</a>
+					<div class="navigation-form">
+						<?php echo get_search_form(); ?>
+					</div>
+
 				</div>
 			</nav>
 			<!--#site-navigation -->
 		</header><!-- #masthead -->
 
-		<div id="content" class="site-content">
+		<div id="site-wrapper" class="site-content">

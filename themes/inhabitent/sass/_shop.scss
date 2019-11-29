@@ -1,11 +1,13 @@
 
-body.archive-product {
-  header.page-header {
-    text-align: center;
+.shop-content {
+  .content-area {
+    margin-top: 100px;
   }
   .page-header {
     margin-top: $base__space-unit * 2;
     text-align: center;
+    font-size: 1.3em;
+    letter-spacing: 2px;
 
     .product-links {
       display: flex;
@@ -16,9 +18,10 @@ body.archive-product {
 
       a {
         text-transform: uppercase;
+        text-align: center;
         font-family: $font__main;
-        font-size: 1.2rem;
-        margin: 0 1.5rem;
+        letter-spacing: 2px;
+        font-size: 2.4rem;
         color: $color__brand-green;
       }
     }
@@ -28,9 +31,7 @@ body.archive-product {
     text-transform: uppercase;
     text-align: center;
     font-family: $font__main;
-    letter-spacing: 2px;
-    font-size: 2.4rem;
-    color: $color__brand-green;
+    font-size: 1rem;
   }
 
 }
